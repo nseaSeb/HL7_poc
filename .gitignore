@@ -1,0 +1,59 @@
+# The directory Mix will write compiled artifacts to.
+/_build/
+
+# If you are running an Elixir application inside a Docker container,
+# you may want to ignore the Docker-related files and directories.
+/.docker/
+/docker-compose.override.yml
+
+# Since we are using Docker, we can ignore most Mix artifacts
+# as they will be created inside the container.
+/cover/
+/doc/
+/.fetch
+erl_crash.dump
+*.ez
+*.beam
+
+# Ignore package tarball (built via "mix hex.build").
+hl7_poc-*.tar
+
+# Ignore the database state and any environment-specific files.
+.env
+.env.local
+.env.*.local
+
+# Temporary files for e.g. tests.
+/tmp/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ElixirLS files
+.elixir_ls/
+
+# Dialyzer
+.plts/
+dialyzer-*.plt
+
+# If using Node.js (if you add Phoenix later)
+/assets/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Database (if you have local dev database)
+*.dump
